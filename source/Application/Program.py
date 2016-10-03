@@ -1,2 +1,4 @@
+from Controller.Order_Manager import Order_Manager
 
-print "Hello world!"
+manager = Order_Manager()
+manager.start()
