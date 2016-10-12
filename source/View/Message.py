@@ -77,5 +77,12 @@ class Message:
         for article in products:
             print("{} - {} : {}".format(article, products_rooster[article], products[article]))
 
+    @staticmethod
+    def show_rooster():
+        output = str()
+        for product in products_rooster:
+            output += '{} - {}\n'.format(product, products_rooster[product])
+        return output
+
 
 

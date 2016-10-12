@@ -1,8 +1,8 @@
 class Receipt:
     __original_name = 'n/a'
-    __list_of_products = []
 
     def __init__(self, original_name, list_of_products):
+        self.__list_of_products = []
         self.__original_name = original_name
         self.__list_of_products = list_of_products
 

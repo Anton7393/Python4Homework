@@ -4,13 +4,15 @@ from Controller.Interpreter import Interpreter
 from datetime import datetime
 from View.Message import Message
 
-class Order_Manager:
-    __list_of_receipts = []
+
+class OrderManager:
     __is_another_order = True
-    __receipt_manager = ReceiptManager()
     __intro_message = "Please input your orders here!"
     __another_order_message = "Type yes if you want to create another order"
     __name_input_message = "Please input your name:"
+
+    def __init__(self):
+        self.__receipt_manager = ReceiptManager()
 
     def start(self):
         Message.show_message(self.__intro_message)

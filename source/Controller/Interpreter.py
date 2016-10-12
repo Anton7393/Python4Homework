@@ -1,5 +1,6 @@
 from Models.ProductsRosster import products_rooster
 
+
 class Interpreter:
     __yes = "yes"
     __help = "?"

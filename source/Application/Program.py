@@ -1,4 +1,4 @@
-from Controller.Order_Manager import Order_Manager
+from Controller.Order_Manager import OrderManager
 
-manager = Order_Manager()
+manager = OrderManager()
 manager.start()

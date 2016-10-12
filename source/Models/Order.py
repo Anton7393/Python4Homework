@@ -1,8 +1,8 @@
 class Order:
-    __list_of_receipts = []
     __name_of_costumer = 'n/a'
 
     def __init__(self, name, current_time):
+        self.__list_of_receipts = []
         self.__name_of_costumer = name
         self.__datetime = current_time
 

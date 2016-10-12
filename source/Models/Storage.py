@@ -2,9 +2,9 @@ from Models.ProductsRosster import products_rooster
 
 
 class Storage:
-    __storage_products = {}
 
     def __init__(self, count):
+        self.__storage_products = {}
         self.__fill_storage_constant(count)
 
     def implements_receipt(self, receipt):
